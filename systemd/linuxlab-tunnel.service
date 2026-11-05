@@ -1,0 +1,14 @@
+[Unit]
+Description=LinuxLab Cloudflare Quick Tunnel
+After=network-online.target nginx.service
+Wants=network-online.target
+Requires=nginx.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/cloudflared tunnel --url http://localhost:80
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
