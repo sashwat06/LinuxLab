@@ -126,13 +126,52 @@ sudo journalctl -u linuxlab-tunnel -n 50 --no-pager
 - Understand that a public tunnel exposes the website to anyone with its URL.
 - Review firewall rules before exposing services.
 
+
+## 📸 Project Screenshots
+
+### Website and Server
+
+| LinuxLab Website | Nginx |
+|---|---|
+| ![Website](screenshots/Web%20page.png) | ![Nginx](screenshots/Nginx.png) |
+
+### Network and Connectivity
+
+| Website Connectivity | Firewall |
+|---|---|
+| ![Connectivity](screenshots/Website%20connectivity.png) | ![Firewall](screenshots/Firewall.png) |
+
+### Cloudflare Tunnel
+
+| Tunnel Configuration | Tunnel Logs |
+|---|---|
+| ![Tunnel](screenshots/Cloudflare-tunnel.png) | ![Tunnel Logs](screenshots/CloudFlare%20Tunnel%20Logs.png) |
+
+### Monitoring and Automation
+
+| Server Health | Cron Jobs |
+|---|---|
+| ![Server Health](screenshots/Server%20health.png) | ![Cron](screenshots/crontab.png) |
+
+### Service Monitoring Alerts
+
+![Service Alert Logs](screenshots/Service%20alert%20logs.png)
+
+## 📊 Monitoring Features
+
+- Bash-based CPU, RAM and disk monitoring.
+- Nginx and Cloudflare Tunnel service checks.
+- Service state-change detection and alert logging.
+- Cron automation every five minutes.
+- Health reports saved locally in the logs directory.
+
+
 ## 🎯 Future Improvements
 
 - Configure a named Cloudflare Tunnel.
 - Add HTTPS and a custom domain.
 - Add monitoring and automated health checks.
 - Improve website design.
-- Add screenshots and deployment documentation.
 
 ## 👨‍💻 Author
 
